@@ -4,11 +4,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="Big and Beefy" />
-    <h3>Are home pages still necessary?</h3>
+    <SEO title="About Ellensburg's Hot New Beef Spot" />
+    <h3>It's about to get all abouted in here.</h3>
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage

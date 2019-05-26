@@ -4,11 +4,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
+const MenuPage = () => (
   <Layout>
-    <SEO title="Big and Beefy" />
-    <h3>Are home pages still necessary?</h3>
+    <SEO title="Menu - What's good to eat here." />
+    <h3>You want the food. And it wants you.</h3>
   </Layout>
 )
 
-export default IndexPage
+export default MenuPage

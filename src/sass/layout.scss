@@ -82,9 +82,15 @@ nav {
       }
     }
 
+    img {
+      &:hover {
+        color: var(--mainGreen)
+      }
+    }
+
   }
 
-  .navbar__icon--wrapper{
+  .navbar__icon--wrapper {
 
     .navbar__icon {
       font-size: 1.3rem;
@@ -110,7 +116,7 @@ nav {
 
     display: none;
 
-    @media(min-width: $layout-breakpoint-small){
+    @media(min-width: $layout-breakpoint-small) {
       width: 10rem;
       display: flex;
       justify-content: space-around;
