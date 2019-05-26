@@ -1,15 +1,127 @@
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --mainBlue: rgb(108, 201, 245);
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
 }
 
-body {
-  font-family: 'caveat', cursive;
-  color: hsl(51, 47%, 25%);
-  background: var(--mainBlue);
+nav {
+  @media (min-width: $layout-breakpoint-small) {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    @include transition($transition);
+    height: 0;
+    overflow: hidden;
+
+
+
+    li {
+      list-style-type: none;
+    }
+
+    .nav__link {
+      display: block;
+      text-decoration: none;
+      padding: .5rem 1rem;
+      color: var(--mainGrey);
+      font-weight: 700;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      @include transition($transition);
+
+      &:hover {
+        background: var(--mainGrey);
+        color: var(--mainGreen);
+        padding-left: 1.3rem;
+      }
+    }
+
+    &.open {
+      height: 152px;
+    }
+
+    @media(min-width: $layout-breakpoint-small) {
+      height: auto;
+      display: flex;
+      margin: 0 auto;
+
+      .nav__link {
+
+        &:hover {
+          background: var(--mainWhite);
+          padding: .5rem 1rem;
+        }
+      }
+    }
+  }
+
+  .header__wrapper {
+    padding: .4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .toggle__icon {
+      font-size: 1.75rem;
+      color: var(--mainGreen);
+      cursor: pointer;
+
+      @media (min-width: $layout-breakpoint-small) {
+        display: none;
+      }
+    }
+
+  }
+
+  .navbar__icon--wrapper{
+
+    .navbar__icon {
+      font-size: 1.3rem;
+      cursor: pointer;
+      @include transition($transition);
+
+      &:hover {
+        color: var(--mainGreen);
+      }
+    }
+
+    .navbar__icon--facebook {
+      color: #3b579d;
+    }
+
+    .navbar__icon--twitter {
+      color: #3ab7f0
+    }
+
+    .navbar__icon--instagram {
+      color: #da5f53
+    }
+
+    display: none;
+
+    @media(min-width: $layout-breakpoint-small){
+      width: 10rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+
+}
+
+
+
+.text__slanted {
+  font-family: 'Caveat', cursive;
 }

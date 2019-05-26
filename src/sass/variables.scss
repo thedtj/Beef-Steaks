@@ -1,0 +1,35 @@
+// breakpoints
+$layout-breakpoint-small: 800px;
+
+//colors
+:root {
+  --mainGreen: rgb(13, 236, 125);
+  --mainWhite: #f7f7f7;
+  --mainBlack: #262626;
+  --mainGrey: #474747;
+
+  --border: .15rem solid white;
+  --letterspacing: .1rem;
+}
+
+
+//transitions
+
+$transition__default: all .5s ease-in-out;
+
+$transFunction: all 0.5s linear;
+
+$transObject: all 0.5s ease-in-out;
+
+$transition: all 0.4s ease-in-out;
+
+
+// mixins
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
