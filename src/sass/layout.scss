@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainBlue: rgb(108, 201, 245);
+}
+
+body {
+  font-family: 'caveat', cursive;
+  color: hsl(51, 47%, 25%);
+  background: var(--mainBlue);
+}
