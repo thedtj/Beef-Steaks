@@ -122,10 +122,23 @@ nav {
       justify-content: space-around;
     }
   }
-
-
 }
 
+.index__header,
+.index__header--default {
+  min-height: calc(100vh - 55.78px);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index__header--default {
+  min-height: 60vh;
+}
 
 
 .text__slanted {

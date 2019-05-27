@@ -4,10 +4,13 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import { PageHero } from '../components/globals/Hero'
+import aboutImg from '../images/bcg/aboutBcg.jpeg'
+
 const AboutPage = () => (
   <Layout>
     <SEO title="About Ellensburg's Hot New Beef Spot" />
-    <h3>It's about to get all abouted in here.</h3>
+    <PageHero img={aboutImg}>What it's all about. </PageHero>
   </Layout>
 )
 

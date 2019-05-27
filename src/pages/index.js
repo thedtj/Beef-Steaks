@@ -3,11 +3,13 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { HomeHero } from '../components/globals/Hero'
+import img from '../images/bcg/homeBcg.jpeg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Big and Beefy" />
-    <h3>Are home pages still necessary?</h3>
+    <HomeHero img={img}>I'm holding out for a hero.</HomeHero>
   </Layout>
 )
 
