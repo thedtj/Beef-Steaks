@@ -19,7 +19,7 @@ nav {
   }
 
   ul {
-    @include transition($transition);
+    @include transition(--transition);
     height: 0;
     overflow: hidden;
 
@@ -124,8 +124,8 @@ nav {
   }
 }
 
-.index__header,
-.index__header--default {
+.hero,
+.hero--default {
   min-height: calc(100vh - 55.78px);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -136,11 +136,116 @@ nav {
   align-items: center;
 }
 
-.index__header--default {
+.hero--default {
   min-height: 60vh;
 }
 
+button {
+  display: block;
+  color: var(--mainWhite);
+  background: transparent;
+  padding: 0.5rem .75rem .5rem 1.25rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  @include letterSpacing($spacing: .5rem);
+  font-weight: 700;
+  border: var(--border);
+  margin: 7vh auto;
+  @include transition($transition);
 
-.text__slanted {
-  font-family: 'Caveat', cursive;
+  &:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+    cursor: pointer;
+  }
+}
+
+.banner {
+  margin-bottom: 7vh;
+  text-align: center;
+
+  .banner__title,
+  .banner__subtitle {
+    color: var(--mainWhite);
+  }
+
+  .banner__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    @include letterSpacing(.75rem)
+  }
+
+  .banner__subtitle {
+    @include textSlanted;
+    @include letterSpacing(.15rem);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  button {
+    @extend button;
+  }
+}
+
+section {
+  padding: 2rem 0;
+  width: 90vw;
+  margin: 0 auto;
+
+  .section-title {
+    text-align: center;
+
+    .section-title__message,
+    .section-title__title {
+      @include letterSpacing(.3rem);
+      font-size: 2rem;
+    }
+
+    .section-title__message {
+      @include textSlanted;
+      color: var(--mainGreen);
+    }
+
+    .section-title__title {
+      text-transform: uppercase;
+    }
+
+    .underline {
+      width: 7rem;
+      height: .2rem;
+      background: var(--mainGreen);
+      margin: .3rem auto;
+    }
+  }
+
+  button {
+    @extend button;
+    color: var(--mainBlack);
+    border: var(--border);
+    border-color: var(--mainBlack);
+
+    &:hover {
+      background: var(--mainBlack);
+      color: var(--mainGreen);
+    }
+  }
+
+  .quick-info {
+    width: 90%;
+    margin: 7vh auto;
+
+    .text {
+      line-height: 2rem;
+      color: var(--mainGrey);
+      word-spacing: .2rem;
+    }
+
+    @media (min-width: $layout-breakpoint-small) {
+      width: 70%
+    }
+
+    @media (min-width: $layout-breakpoint-med) {
+      width: 60%
+    }
+  }
 }

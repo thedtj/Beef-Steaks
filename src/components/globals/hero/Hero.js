@@ -1,9 +1,9 @@
 import React from 'react'
-import img from '../../images/bcg/homeBcg.jpeg'
+import img from '../../../images/bcg/homeBcg.jpeg'
 
 const HomeHero = ({ img, children }) => (
   <header
-    className="index__header"
+    className="hero"
     style={{
       background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${img}) center/cover fixed no-repeat`,
     }}
@@ -14,7 +14,7 @@ const HomeHero = ({ img, children }) => (
 
 const PageHero = ({ img, children }) => (
   <header
-    className="index__header--default"
+    className="hero--default"
     style={{
       background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${img}) center/cover fixed no-repeat`,
     }}

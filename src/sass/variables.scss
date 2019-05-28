@@ -1,5 +1,6 @@
 // breakpoints
 $layout-breakpoint-small: 800px;
+$layout-breakpoint-med: 1000px;
 
 //colors
 :root {
@@ -8,9 +9,10 @@ $layout-breakpoint-small: 800px;
   --mainBlack: #262626;
   --mainGrey: #474747;
 
-  --border: .15rem solid white;
+  --border: .15rem solid var(--mainWhite);
   --letterspacing: .1rem;
 }
+
 
 
 //transitions
@@ -32,4 +34,12 @@ $transition: all 0.4s ease-in-out;
   -ms-transition: $args;
   -o-transition: $args;
   transition: $args;
+}
+
+@mixin letterSpacing($spacing: 0.1rem) {
+  letter-spacing: $spacing
+}
+
+@mixin textSlanted {
+  font-family: 'Caveat', cursive;
 }

@@ -4,14 +4,14 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import { PageHero } from '../components/globals/Hero'
+import { PageHero, Banner } from '../components/globals/hero'
 import contactImg from '../images/bcg/contactBcg.jpeg'
 
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact us with questions and highlights!" />
     <PageHero img={contactImg}>
-      Jodi Foster would like to tell you about here alien dad.
+      <Banner title="Contact Us" subtitle="Lay your beefs down before us" />
     </PageHero>
   </Layout>
 )
