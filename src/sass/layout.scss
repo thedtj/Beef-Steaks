@@ -249,3 +249,51 @@ section {
     }
   }
 }
+
+footer {
+  padding: 2rem 0;
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin: 2vmin auto;
+  }
+
+  .icons {
+    width: 30vmax;
+    display: flex;
+    justify-content: space-between;
+    // margin: 0 auto;
+  }
+
+  .icon {
+    color: var(--mainWhite);
+    font-size: 1.3rem;
+
+    @include transition($transition);
+
+    &:hover {
+      color: var(--mainGreen)
+    }
+  }
+
+  .copyright {
+    color: var(--mainGreen);
+    text-transform: capitalize;
+    text-align: center;
+    // margin: 7vh 0 2vh 0;
+  }
+
+  .footer-title {
+    text-align: center;
+    color: var(--mainGreen);
+    text-transform: uppercase;
+    padding: .3rem 1rem;
+    margin: 0 auto 4vh auto;
+    font-size: 1.5rem;
+    border: var(--border);
+    border-color: var(--mainGreen)
+  }
+}
