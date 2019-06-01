@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "D:\\Documents\\Javascript\\Gatsby\\Gatsby Tutorial and Projects Course\\restaurant"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#f3cd5a",
+			"titleBar.inactiveBackground": "#f3cd5a99",
+			"titleBar.activeForeground": "#15202b",
+			"titleBar.inactiveForeground": "#15202b99"
+		}
+	}
+}
