@@ -23,8 +23,6 @@ const Gallery = () => (
     query={GALLERY_IMAGE_QUERY}
     render={data => {
       const images = data.getImages.edges
-      console.log(images)
-
       return (
         <section>
           <div className="gallery__wrapper">

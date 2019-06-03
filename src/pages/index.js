@@ -4,8 +4,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { HomeHero, Banner } from '../components/globals/hero'
-import QuickInfo from '../components/homepageComponents/QuickInfo'
-import Gallery from '../components/homepageComponents/GalleryBest'
+import { Gallery, Menu, QuickInfo } from '../components/homepageComponents'
 import img from '../images/bcg/homeBcg.jpeg'
 
 const IndexPage = () => (
@@ -21,6 +20,7 @@ const IndexPage = () => (
     </HomeHero>
     <QuickInfo />
     <Gallery />
+    <Menu />
   </Layout>
 )
 
