@@ -314,6 +314,7 @@
    margin: 3rem 0;
    display: grid;
    grid-template-columns: 100%;
+   grid-gap: 1rem;
 
    @media(min-width: 550px) {
      grid-template-columns: 95%;
@@ -325,8 +326,10 @@
    }
 
    @media(min-width: 1000px) {
+     max-width: 1200px;
+     margin: 3rem auto;
      grid-template-columns: 1fr 1fr;
-     grid-gap: 2rem;
+     grid-gap: 3rem;
    }
  }
 
@@ -361,7 +364,10 @@
      margin-top: .5rem;
      word-spacing: .2rem;
      text-transform: lowercase;
-     ;
+
+     @media(min-width: 1000px) {
+       max-width: 95%;
+     }
    }
 
  }
