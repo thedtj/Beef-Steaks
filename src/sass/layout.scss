@@ -12,6 +12,12 @@ body {
   background: var(--mainWhite);
 }
 
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
 .gatsby-image-wrapper {
   height: 100%;
 }
@@ -154,7 +160,7 @@ button {
   @include letterSpacing($spacing: .5rem);
   font-weight: 700;
   border: var(--border);
-  margin: 7vh auto;
+  margin: 3rem auto;
   @include transition($transition);
 
   &:hover {
@@ -165,7 +171,7 @@ button {
 }
 
 .banner {
-  margin-bottom: 7vh;
+  margin-bottom: 3rem;
   text-align: center;
 
   .banner__title,
@@ -237,7 +243,7 @@ section {
 
 .quick-info {
   width: 90%;
-  margin: 7vh auto;
+  margin: 3rem auto;
 
   .text {
     line-height: 2rem;
@@ -269,7 +275,7 @@ section {
     top: 0;
     left: 0;
     background: var(--mainGreen);
-    padding: .1rem .3rem;
+    padding: .3rem .3rem;
     text-transform: capitalize;
   }
 
@@ -339,7 +345,6 @@ footer {
     color: var(--mainGreen);
     text-transform: capitalize;
     text-align: center;
-    // margin: 7vh 0 2vh 0;
   }
 
   .footer-title {
@@ -347,7 +352,7 @@ footer {
     color: var(--mainGreen);
     text-transform: uppercase;
     padding: .3rem 1rem;
-    margin: 0 auto 4vh auto;
+    margin: 0 auto 1rem auto;
     font-size: 1.5rem;
     border: var(--border);
     border-color: var(--mainGreen)

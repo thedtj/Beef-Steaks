@@ -11,6 +11,7 @@ import PropTypes from 'prop-types'
 import Navbar from './globals/navbar'
 import Footer from './globals/Footer'
 
+import './normalize.css'
 import '../sass/layout.scss'
 
 const Layout = ({ children }) => (
